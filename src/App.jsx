@@ -7,7 +7,7 @@ import Footer from './components/footer/Footer';
 import About from './components/about/About';
 import Services from './components/services/Services';
 import ContactUs from './components/contact/ContactUs';
-import FAQ from './components/faq/Faq';
+import FAQ from './components/faq/FAQ';
 import Projects from './components/projects/Projects';
 import Resources from './components/resources/Resources';
 import Agents from './components/agents/Agents';
