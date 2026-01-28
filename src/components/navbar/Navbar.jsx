@@ -51,7 +51,7 @@ const more = [
 const Navbar = () => {
   const [navbar, setnavbar] = useState(false)
   return (
-    <div className='app-container '>
+    <div className='app-container'>
       <div className='relative'>
         <motion.div className='flex justify-between items-center' initial={{ opacity: 0, y: 40, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -60,20 +60,17 @@ const Navbar = () => {
             ease: "easeOut"
           }} >
 
-          <div className='flex items-center '>
-            <img
-              src="/logo.png"
-              alt="logo"
-              className="max-w-80 max-h-80 object-contain"
-            />
-
-            <Link to="/" className='text-xl font-extrabold'></Link>
-          </div>
+          <Link to="/" className='flex items-center '>
+            <img src="/logo.png" alt="logo" className='max-md:w-30 md:w-60 max-md:20 md:40' />          
+          </Link>
           <div className='lg:hidden max-lg:flex justify-center items-center gap-2 '>
             <button onClick={() => setnavbar(!navbar)}>
               <HiMenu size={28} />
             </button>
+
+
           </div>
+
           <div className='max-lg:hidden flex items-center justify-center gap-4'>
             {
               nav.map((item, index) => (
@@ -118,26 +115,11 @@ const Navbar = () => {
                     <Link to={item.link}>{item.title}</Link>
                   </div>
                 ))
-
               }
-
-
-
             </div>
-
           )
         }
-
-
-
-
-
-
-
-
       </div>
-
-
     </div>
   )
 }
