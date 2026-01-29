@@ -4,15 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom"
 import TopToScroll from './components/scrolltotop/TopToScroll.jsx'
-
+import { ToastContainer } from 'react-toastify';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
     <BrowserRouter>
-      <App />
       <TopToScroll />
+      <App />
+      <ToastContainer />
     </BrowserRouter>
-
   </StrictMode>
 )

@@ -7,6 +7,8 @@ import {
     FaClock,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser"
 
 const ContactUs = () => {
     const navigate = useNavigate();
@@ -16,18 +18,29 @@ const ContactUs = () => {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = async (data) => {
-        try {
-            const response = await axiosInstance.post(
-                "/inquiry",
-                data
+    const onSubmit = (data) => {
+        emailjs
+            .send(
+                "service_8a5h8bq",
+                "template_078q0hv",
+                {
+                    name: data.name,
+                    email: data.email,
+                    phone: data.phone,
+                    message: data.message,
+                },
+                "FdeJLhJ7IBSpFDl-Y"
+            )
+            .then(
+                () => {
+                    toast.success("Email sent successfully ✅");
+                },
+                () => {
+                    toast.error("Failed to send email ❌");
+                }
             );
-            toast.success(response.data.message);
-            navigate("/");
-        } catch (error) {
-            console.log(error);
-        }
     };
+
 
     return (
         <div className="app-container">
@@ -67,9 +80,9 @@ const ContactUs = () => {
                                 <label className="block mb-2 font-medium">Phone</label>
                                 <input
                                     type="tel"
-                                    maxLength={10} 
+                                    maxLength={10}
                                     onInput={(e) => {
-                                        e.target.value = e.target.value.replace(/[^0-9]/g, ""); 
+                                        e.target.value = e.target.value.replace(/[^0-9]/g, "");
                                     }}
                                     {...register("phone", {
                                         required: "Phone is required",

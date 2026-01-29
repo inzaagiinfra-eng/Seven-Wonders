@@ -45,6 +45,7 @@ const card = {
   }
 };
 
+
 const PropertyType = () => {
     return (
         <div className='app-container mt-12'>

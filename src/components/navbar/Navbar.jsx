@@ -101,7 +101,7 @@ const Navbar = () => {
 
         {navbar
           && (
-            <div className='absolute right-10 bg-black text-white p-4 rounded-lg top-4' >
+            <div className='absolute right-10 bg-black text-white p-4 rounded-lg top-4'>
               {
                 nav.map((item, index) => (
                   <div key={item.id}>

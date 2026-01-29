@@ -2,7 +2,7 @@ import React from 'react'
 import CountUp from "react-countup";
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-
+import {Link} from "react-router-dom"
 
 const WhoWeAre = () => {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -27,14 +27,13 @@ const WhoWeAre = () => {
                     }}
                     viewport={{ once: false, amount: 0.3 }} className='flex flex-col lg:w-[50%] w-full lg:gap-6  max-lg:gap-2'>
                     <h2 className='text-2xl lg:text-3xl font-semibold'>
-                        In the United States, the transfer acquisition of real estate                    </h2>
+                        In the United States, the transfer acquisition of real estate</h2>
                     <p className='text-sm lg:text-md font-semibold'>
                         Real estate is different from personal property, which is not permanently attached to the land (or comes with the land), such as vehicles, boats, jewelry, furniture, tools, and the rolling stock of a farm and farm. In the United States, the transfer, owning, or acquisition.                    </p>
                     <div className='flex gap-4'>
-                        <button className='px-6 py-2 bg-black cursor-pointer text-white rounded-4xl hover:border hover:bg-white hover:text-black '>Contact Us</button>
-                        <button className='px-6 py-2 border cursor-pointer rounded-4xl hover:bg-blue-400 hover:text-white'>Read More</button>
+                        <Link to="/contact-us" className='px-6 py-2 bg-black cursor-pointer text-white rounded-4xl hover:border hover:bg-white hover:text-black '>Contact Us</Link>
+                        <Link to="/service" className='px-6 py-2 border cursor-pointer rounded-4xl hover:bg-blue-400 hover:text-white'>Read More</Link>
                     </div>
-
                     <div ref={ref} className='flex lg:justify-start max-lg:justify-center items-start lg:gap-28 md:gap-20  max-md:gap-12 mt-8'>
                         <div className='flex flex-col items-center lg:text-4xl font-bold max-lg:text-2xl mt-1'>
                             {inView && <CountUp start={0} end={500} delay={0.3} suffix='+' duration={5} />}                            <p className='lg:text-lg max-lg:text-sm' >Projects</p>
