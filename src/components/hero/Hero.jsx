@@ -9,8 +9,6 @@ const Hero = () => {
 
 
       <div className="   bg-linear-to-r from-blue-100 via-blue-50 to-orange-200 px-8 lg:py-6 max-lg:py-4 rounded-4xl flex items-center justify-between max-lg:flex-col  lg:min-h-[60vh] max-lg:min-h-[80vh]">
-
-
         <motion.div initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
@@ -33,13 +31,11 @@ const Hero = () => {
               <span>Get</span> <span>Started</span>
             </Link>
 
-            <Link to="/about-us" className="border flex border-white text-white px-6 py-2 rounded-4xl hover:bg-white hover:text-black transition">
+            <Link to="/about-us" className="border flex border-black text-white px-6 py-2 rounded-4xl hover:bg-white hover:text-black transition">
               <span>Learn</span> <span>More</span>
             </Link>
           </div>
         </motion.div>
-
-
         <motion.div initial={{ opacity: 0, x: 60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
@@ -54,7 +50,6 @@ const Hero = () => {
             className="w-450 max-lg:w-300"
           />
         </motion.div>
-
       </div>
     </section>
   );

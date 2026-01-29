@@ -116,9 +116,9 @@ const Contact = () => {
                     }}
                     viewport={{ once: false, amount: 0.3 }} className="mt-10 lg:mt-0 px-6 max-lg:mb-8">
                     <img
-                        src="/bottomfooter.png"
+                        src="/bottomhome.png"
                         alt="hero-img"
-                        className="w-450 max-lg:w-300"
+                        className="max-w-150 max-lg:max-w-90"
                     />
                 </motion.div>
 
