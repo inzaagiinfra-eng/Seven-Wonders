@@ -36,11 +36,7 @@ const nav = [
 ]
 
 const more = [
-  {
-    id: 1,
-    title: "Other Services",
-    link: "/service",
-  },
+ 
   {
     id: 2,
     title: "Contact Us",

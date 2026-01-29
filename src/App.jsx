@@ -15,6 +15,7 @@ import Community from './components/community/Community';
 import ShowReviews from './components/review/ShowReviews';
 import Blog from './components/blog/Blog';
 import PressInfo from './components/pressinfo/PressInfo';
+ 
 
 
 function App() {

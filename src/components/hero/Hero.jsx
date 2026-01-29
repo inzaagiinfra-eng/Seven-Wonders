@@ -19,7 +19,7 @@ const Hero = () => {
           }}
           viewport={{ once: false, amount: 0.3 }} className="text-center max-lg:mt-8 lg:text-left max-w-xl px-6">
           <p className="text-sm font-semibold lg:text-lg max-lg:text-md">Welcome to Seven Wonders</p>
-          <h1 className="text-black text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="text-black text-4xl md:text-6xl font-bold mb-4">
             Find the Right Property <br /> At the Right Price
           </h1>
 
@@ -29,12 +29,12 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex justify-center lg:justify-start gap-4">
-            <Link to="/contact-us" className="bg-black text-white px-6 py-2 rounded-4xl font-semibold hover:scale-105 transition">
-              Get Started
+            <Link to="/contact-us" className="bg-black flex text-white px-6 py-2 rounded-4xl font-semibold hover:scale-105 transition">
+              <span>Get</span> <span>Started</span>
             </Link>
 
-            <Link to="/about-us" className="border border-white text-white px-6 py-2 rounded-4xl hover:bg-white hover:text-black transition">
-              Learn More
+            <Link to="/about-us" className="border flex border-white text-white px-6 py-2 rounded-4xl hover:bg-white hover:text-black transition">
+              <span>Learn</span> <span>More</span>
             </Link>
           </div>
         </motion.div>
