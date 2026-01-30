@@ -3,26 +3,26 @@ import { Link } from 'react-router-dom'
 import { motion } from "framer-motion"
 
 const types = [
-
     {
         id: 1,
-        title: "Buy a property",
-        description: "Discover your dream home with us - buy a property that suits your needs and desires!",
+        title: "Buy a Property",
+        description: "Find the perfect residential or commercial property with Seven Wonders. We offer verified listings and expert guidance to help you make the right investment.",
         img: "/property-buy.svg"
     },
     {
         id: 2,
-        title: "Sell a property",
-        description: "Maximize your property's potential - sell with us for a seamless and successful transaction!",
+        title: "Sell a Property",
+        description: "Sell your property with confidence. Seven Wonders ensures the best market value, transparent deals, and a smooth selling experience from start to finish.",
         img: "/property-sell.svg"
     },
     {
         id: 3,
-        title: "Rent a property",
-        description: "Experience the perfect rental - find your ideal home with us and enjoy the comfort and convenience you deserve!",
+        title: "Rent a Property",
+        description: "Explore premium rental options for homes, offices, and commercial spaces. We connect you with reliable tenants and properties that match your requirements.",
         img: "/property-rent.svg"
     },
-]
+];
+
 
 const container = {
     hidden: { opacity: 0 },

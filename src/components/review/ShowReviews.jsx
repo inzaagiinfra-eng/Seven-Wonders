@@ -11,8 +11,8 @@ import { MdVerified } from "react-icons/md";
 const allreview = [
     {
         name: "Rahul Sharma",
-        rating: 4.5,
-        text: "Amazing service! The team was very professional and delivered everything on time. Highly recommended.",
+        rating: 4.8,
+        text: "Seven Wonders helped me find the perfect home within my budget. The team was professional, transparent, and supportive throughout the process.",
         image: {
             url: "/reviews/man1.png"
         }
@@ -20,67 +20,67 @@ const allreview = [
     {
         name: "Priya Verma",
         rating: 5,
-        text: "Absolutely loved the experience. Quality was top-notch and support was very helpful.",
+        text: "Excellent experience with Seven Wonders. From property visits to documentation, everything was handled smoothly and professionally.",
         image: {
-           url: "/reviews/girl1.avif"
+            url: "/reviews/girl1.avif"
         }
     },
     {
         name: "Amit Kumar",
-        rating: 4,
-        text: "Good overall experience. There is still some room for improvement, but I’m satisfied.",
+        rating: 4.6,
+        text: "Very reliable real estate service. They guided me honestly and helped me make the right investment decision.",
         image: {
-           url: "/reviews/man5.webp"
+            url: "/reviews/man5.webp"
         }
     },
     {
         name: "Neha Singh",
-        rating: 3.5,
-        text: "Service was decent. Delivery was slightly late but the quality made up for it.",
+        rating: 4.5,
+        text: "Great support and timely updates. Seven Wonders made renting a property a hassle-free experience for me.",
         image: {
-           url: "/reviews/girl3.png"
+            url: "/reviews/girl3.png"
         }
     },
     {
         name: "Vikas Patel",
-        rating: 4.8,
-        text: "Very smooth experience from start to finish. Will definitely use the service again.",
+        rating: 4.9,
+        text: "Smooth and transparent property selling experience. The team ensured the best value and quick closure.",
         image: {
-           url: "/reviews/man2.png"
+            url: "/reviews/man2.png"
         }
     },
     {
-    name: "Rohit Mehta",
-    rating: 4.7,
-    text: "Highly reliable real estate consultants. Smooth documentation process and timely updates at every step.",
-    image: {
-      url: "/reviews/man3.png"
+        name: "Rohit Mehta",
+        rating: 4.7,
+        text: "Highly professional real estate consultants. Documentation and communication were clear at every step.",
+        image: {
+            url: "/reviews/man3.png"
+        }
+    },
+    {
+        name: "Anjali Gupta",
+        rating: 5,
+        text: "Seven Wonders made my home buying journey stress-free. Trustworthy team with excellent market knowledge.",
+        image: {
+            url: "/reviews/girl2.png"
+        }
+    },
+    {
+        name: "Vikram Patel",
+        rating: 4.6,
+        text: "Honest advice and great commercial property options. I highly recommend Seven Wonders for real estate services.",
+        image: {
+            url: "/reviews/man4.jpg"
+        }
+    },
+    {
+        name: "Pooja Malhotra",
+        rating: 5,
+        text: "Outstanding service and quick response. Seven Wonders handled everything professionally from start to finish.",
+        image: {
+            url: "/reviews/girl4.png"
+        }
     }
-  },
-  {
-    name: "Anjali Gupta",
-    rating: 5,
-    text: "Professional, trustworthy, and customer-focused. Seven Wonders made my home buying journey stress-free.",
-    image: {
-      url: "/reviews/girl2.png"
-    }
-  },
-  {
-    name: "Vikram Patel",
-    rating: 4.6,
-    text: "Excellent market knowledge and honest advice. I would definitely recommend Seven Wonders for property consulting.",
-    image: {
-      url: "/reviews/man4.jpg"
-    }
-  },
-  {
-    name: "Pooja Malhotra",
-    rating: 5,
-    text: "Outstanding service and quick response time. The team handled everything professionally from start to finish.",
-    image: {
-      url: "/reviews/girl4.png"
-    }
-  }
 ];
 
 

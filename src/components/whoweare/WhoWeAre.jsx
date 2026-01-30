@@ -2,7 +2,7 @@ import React from 'react'
 import CountUp from "react-countup";
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const WhoWeAre = () => {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -14,7 +14,7 @@ const WhoWeAre = () => {
             <div className='flex flex-col items-center text-center'>
                 <p className='font-semibold text-gray-600 text-sm lg:text-md'>Who we are?</p>
                 <h1 className='font-bold text-3xl lg:text-5xl mt-2'>
-                    We are a global, boutique real estate brokerage                </h1>
+                    We are a trusted real estate partner              </h1>
             </div>
 
             <div className='flex flex-col lg:flex-row justify-between items-center lg:mt-16 max-lg:mt-4 w-full gap-8'>
@@ -27,9 +27,14 @@ const WhoWeAre = () => {
                     }}
                     viewport={{ once: false, amount: 0.3 }} className='flex flex-col lg:w-[50%] w-full lg:gap-6  max-lg:gap-2'>
                     <h2 className='text-2xl lg:text-3xl font-semibold'>
-                        In the United States, the transfer acquisition of real estate</h2>
+                        Delivering reliable residential & commercial property solutions</h2>
                     <p className='text-sm lg:text-md font-semibold'>
-                        Real estate is different from personal property, which is not permanently attached to the land (or comes with the land), such as vehicles, boats, jewelry, furniture, tools, and the rolling stock of a farm and farm. In the United States, the transfer, owning, or acquisition.                    </p>
+                        Seven Wonders is a professional real estate company specializing in the buying,
+                        selling, and renting of residential and commercial properties. We focus on
+                        understanding our clients’ needs and providing the right property solutions
+                        with complete transparency and expert guidance. From homes and apartments to
+                        offices, shops, and commercial spaces, we help our clients make confident and
+                        well-informed real estate decisions.</p>
                     <div className='flex gap-4'>
                         <Link to="/contact-us" className='px-6 py-2 bg-black cursor-pointer text-white rounded-4xl hover:border hover:bg-white hover:text-black '>Contact Us</Link>
                         <Link to="/service" className='px-6 py-2 border cursor-pointer rounded-4xl hover:bg-blue-400 hover:text-white'>Read More</Link>

@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="w-full app-container">
 
 
-      <div className="   bg-linear-to-r from-blue-100 via-blue-50 to-orange-200 px-8 lg:py-6 max-lg:py-4 rounded-4xl flex items-center justify-between max-lg:flex-col  lg:min-h-[60vh] max-lg:min-h-[80vh]">
+      <div className="   bg-linear-to-r from-blue-100 via-blue-50 to-orange-200 px-8 lg:py- max-lg:py-4 rounded-4xl flex items-center justify-between max-lg:flex-col  lg:min-h-[60vh] max-lg:min-h-[80vh]">
         <motion.div initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
@@ -45,7 +45,7 @@ const Hero = () => {
           }}
           viewport={{ once: false, amount: 0.3 }} className="mt-10 lg:mt-0 px-6 max-lg:mb-8">
           <img
-            src="/home1.png"
+            src="/home5.png"
             alt="hero-img"
             className="w-450 max-lg:w-300"
           />

@@ -98,7 +98,7 @@ const Services = () => {
                         </li>
                     </ul>
 
-                    <a href="https://wa.me/918076310637?text=Hello%20I%20am%20interested%20in%20your%20property" className='flex justify-center items-center gap-4 bg-amber-900 lg:py-3 text-white font-semibold lg:px-3 max-lg:py-2 max-lg:px-2 rounded-2xl w-fit'><span>Discuss Your Requirements</span> <img src="/icons/whatsapp.png" className='w-6 h-6' alt="whatsapp" /> </a>
+                    <a href="https://wa.me/918076310637?text=Hello%20I%20am%20interested%20in%20your%20property" className='flex justify-center items-center gap-4 bg-[#C0C9EE] lg:py-3 text-white font-semibold lg:px-3 max-lg:py-2 max-lg:px-2 rounded-2xl w-fit'><span>Discuss Your Requirements</span> <img src="/icons/whatsapp.png" className='w-6 h-6' alt="whatsapp" /> </a>
 
 
                 </div>
@@ -112,7 +112,7 @@ const Services = () => {
                 {services.map((item, index) => (
                     <Link
                         key={index}
-                        className="flex flex-col justify-center items-center  bg-amber-900  p-6 rounded-xl w-full max-w-65  transform transition duration-300 hover:-translate-y-4 hover:shadow-lg"
+                        className="flex flex-col justify-center items-center  bg-[#C0C9EE]  p-6 rounded-xl w-full max-w-65  transform transition duration-300 hover:-translate-y-4 hover:shadow-lg"
                     >
                         <div className="text-white text-5xl p-4 rounded-full mb-4">
                             {item.icon}
@@ -132,7 +132,7 @@ const Services = () => {
             <div className="flex flex-col justify-center items-center 
                 lg:mt-20 max-lg:mt-8
                 lg:gap-8 max-lg:gap-4
-                bg-yellow-900 py-6 
+                bg-[#C0C9EE] py-6 
                 rounded-4xl 
                 max-w-5xl mx-auto text-center">
 
@@ -146,7 +146,7 @@ const Services = () => {
                 </p>
 
                 <div className="flex gap-4 justify-center flex-wrap">
-                    <a href="https://wa.me/918076310637?text=Hello%20I%20am%20interested%20in%20your%20property" className="flex items-center gap-3 bg-yellow-500  text-white font-semibold
+                    <a href="https://wa.me/918076310637?text=Hello%20I%20am%20interested%20in%20your%20property" className="flex items-center gap-3 bg-[#18230F]  text-white font-semibold
                   lg:py-3 lg:px-4 max-lg:py-2 max-lg:px-3 rounded-2xl  hover:bg-white hover:text-black cursor-pointer">
                         <IoCalendarNumberOutline size={20} />  Schedule Consultation
 
@@ -154,7 +154,7 @@ const Services = () => {
 
                     <a
                         href="tel:+918076310637"
-                        className="flex items-center gap-3 bg-yellow-500 text-white font-semibold
+                        className="flex items-center gap-3 bg-[#18230F] text-white font-semibold
              lg:py-3 lg:px-4 max-lg:py-2 max-lg:px-3
              rounded-2xl hover:bg-white hover:text-black cursor-pointer"
                     >

@@ -18,7 +18,7 @@ const OurQuality = () => {
                         delay: 0.2,
                     }}
                     viewport={{ once: false, amount: 0.3 }} className='lg:w-[50%] max-lg:w-full'>
-                    <img className='w-full' src="/quality.png" alt="property" />
+                    <img className='w-full ' src="/quality.png" alt="property" />
                 </motion.div>
 
 
@@ -30,13 +30,13 @@ const OurQuality = () => {
                     }}
                     viewport={{ once: false, amount: 0.3 }} className=' flex flex-col justify-center items-start lg:gap-4'>
                     <p>our best services</p>
-                    <h1 className='lg:text-5xl max-lg:text-2xl font-bold'>And here's how? We do <br /> insurance better</h1>
+                    <h1 className='lg:text-5xl max-lg:text-2xl font-bold'>   Why Choose <br /> Seven Wonders</h1>
                     <ul className='flex flex-col justify-center items-start lg:gap-4 max-lg:gap-2'>
-                        <li className='flex  justify-center items-center font-semibold gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span>Save an average of 1000000 per year</span></li>
-                        <li className='flex  justify-center items-center font-semibold  gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span>File a claim in 3 minutes</span></li>
-                        <li className='flex  justify-center items-center font-semibold  gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span> Easily manage your policy online</span></li>
-                        <li className='flex  justify-center items-center font-semibold  gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span>Skip the faxing, long paperwork, and unnecessary phone calls</span></li>
-                        <li className='flex  justify-center items-center font-semibold  gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span> Get support from an American-based team</span></li>
+                        <li className='flex  justify-center items-center font-semibold gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span>Expert guidance for buying, selling, and renting properties</span></li>
+                        <li className='flex  justify-center items-center font-semibold  gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span>Verified residential and commercial property listings</span></li>
+                        <li className='flex  justify-center items-center font-semibold  gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span> Transparent pricing with no hidden charges</span></li>
+                        <li className='flex  justify-center items-center font-semibold  gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span>Smooth documentation and hassle-free transactions</span></li>
+                        <li className='flex  justify-center items-center font-semibold  gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span>Dedicated support from experienced real estate professionals</span></li>
 
                     </ul>
 

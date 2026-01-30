@@ -5,7 +5,7 @@ const About = () => {
         <div className='app-container'>
             <div>
                 <img src="/anthorimages/about.webp" alt="" />
-                <p className='text-center lg:text-md max-lg:text-sm lg:mt-12 max-lg:mt-6'>At <span className='font-semibold'>SEVEN WONDERS</span>, we are your trusted destination for premium real estate solutions and property services. Our mission is to help you find the perfect home or investment by offering carefully curated properties along with exceptional service and expert guidance. From the moment you connect with us, you’ll experience our dedication to turning your real estate goals into reality—creating spaces that match your lifestyle, aspirations, and long-term vision.</p>
+                <p className='text-center lg:text-md max-lg:text-sm lg:mt-12 max-lg:mt-6'>At <span className='font-semibold'>SEVEN WONDERS</span>, we are a trusted real estate company specializing in the sale, purchase, and rental of residential and commercial properties. Our goal is to make property transactions simple, transparent, and rewarding for our clients. Whether you are looking for a dream home, a profitable investment, or the perfect commercial space, we provide expert guidance and carefully selected properties to meet your needs. With a client-first approach and deep market knowledge, Seven Wonders is committed to helping you make confident real estate decisions.</p>
 
             </div>
 
@@ -16,7 +16,7 @@ const About = () => {
                 </div>
                 <div className='max-lg:w-full lg:w-[50%] max-lg:mt-8'>
                     <h1 className='lg:text-4xl max-lg:text-2xl font-bold lg:mb-4 '>OUR JOURNEY</h1>
-                    <p className='lg:text-md max-lg:text-sm'>Founded with a passion for creating exceptional living spaces, SEVEN WONDERS, has grown into a trusted name in the real estate industry. Our journey began with a clear vision: to connect people with high-quality homes, commercial properties, and investment opportunities that suit every lifestyle and purpose. From residential homes and offices to retail spaces, cafés, hotels, and more, we take pride in delivering properties that meet the highest standards. Today, we are recognized for our commitment to excellence, transparency, and client satisfaction—always striving to exceed expectations.</p>
+                    <p className='lg:text-md max-lg:text-sm'>Founded with a strong vision and passion for real estate, Seven Wonders began its journey with the aim of delivering reliable and professional property solutions. Over the years, we have built a reputation for trust, integrity, and quality service across residential and commercial real estate. From buying and selling homes to renting offices, shops, cafés, hotels, and other commercial spaces, our experience spans diverse property needs. Today, our journey continues with a focus on long-term relationships, transparent dealings, and consistent client satisfaction.</p>
                 </div>
             </div>
             <div className='flex justify-center items-center max-lg:flex-col w-full lg:mt-26 max-lg:mt-12 lg:gap-14'>
@@ -26,7 +26,7 @@ const About = () => {
                 </div>
                 <div className='max-lg:w-full lg:w-[50%] max-lg:mt-8'>
                     <h1 className='lg:text-4xl max-lg:text-2xl font-bold lg:mb-4 '>OUR VISION</h1>
-                    <p>At Seven Wonders, we envision creating a harmonious blend of quality construction, sustainable development, and timeless architectural design. Rooted in strong values yet inspired by modern lifestyles, we aim to deliver premium residential and commercial spaces that transform the way people live, work, and invest. With a commitment to excellence, innovation, and responsible growth, Seven Wonders strives to redefine the real estate experience by offering spaces that reflect comfort, elegance, and long-term value. </p>
+                    <p>At Seven Wonders, our vision is to redefine the real estate experience by offering high-quality residential and commercial properties that add real value to our clients’ lives and investments. We aim to combine market expertise, ethical practices, and modern real estate solutions to create lasting opportunities. With a focus on sustainable growth, smart investments, and customer trust, Seven Wonders strives to become a preferred real estate partner for individuals, businesses, and investors alike.</p>
                 </div>
                 <div className='max-lg:w-full lg:w-[50%] max-lg:hidden '>
                     <img src="/anthorimages/vison.jpg" className='rounded-4xl' alt="journey" />
