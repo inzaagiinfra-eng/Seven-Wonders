@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { BiHomeCircle } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoCallSharp } from "react-icons/io5";
+import { IoMailUnread } from "react-icons/io5";
 
 const home = [
     { title: "Services", link: "/service" },
@@ -24,10 +27,10 @@ const resources = [
 ];
 
 const social = [
-  { title: "Instagram", link: "https://www.instagram.com" },
-  { title: "Facebook", link: "https://www.facebook.com" },
-  { title: "Twitter", link: "https://twitter.com" },
-  { title: "LinkedIn", link: "https://www.linkedin.com" },
+    { title: "Instagram", link: "https://www.instagram.com" },
+    { title: "Facebook", link: "https://www.facebook.com" },
+    { title: "Twitter", link: "https://twitter.com" },
+    { title: "LinkedIn", link: "https://www.linkedin.com" },
 ];
 
 const Footer = () => {
@@ -43,16 +46,43 @@ const Footer = () => {
     return (
         <footer className="app-container py-10 lg:mt-40 max-lg:mt-18">
             <div className="flex max-lg:flex-col gap-10">
-                <div className="lg:w-1/3 flex flex-col gap-4">
+
+
+                <div className="lg:w-1/3 flex flex-col  ">
                     <h1 className="flex items-center gap-2 text-xl font-bold text-black">
-                        <BiHomeCircle size={48} />
-                        AllState
+                        <img src="/logo.png" alt="logo" className='max-md:w-20 md:w-30 ' />
                     </h1>
-                    <p className="text-sm text-black leading-relaxed">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi et rerum veritatis porro natus id iste eum.
-                    </p>
+                    <div className="flex-col gap-2 flex">
+
+                        <p className="text-sm flex items-center gap-2 text-black leading-relaxed">
+                            <span><FaLocationDot size={20} />
+                            </span>
+                            <span>Building No.362, Sushant Lok-1,
+                                Sector-43, Gurugram, Haryana</span>
+                        </p>
+                        <p className="text-sm flex items-center gap-2 text-black leading-relaxed">
+                            <span><FaLocationDot size={20} />
+                            </span>
+                            <span>Building No.362, Sushant Lok-1,
+                                Sector-43, Gurugram, Haryana</span>
+                        </p>
+                        <p className="text-sm flex items-center gap-2 text-black leading-relaxed">
+                            <span><IoCallSharp size={20} />
+                            </span>
+                            <span>+91 8076310637</span>
+                        </p>
+                        <p className="text-sm flex items-center gap-2 text-black leading-relaxed">
+                            <span><IoMailUnread  size={20} />
+                            </span>
+                            <span>sevenwonder234@gmail.com</span>
+                        </p>
+                    </div>
                 </div>
+
+
+
+
+
 
                 <div className="lg:w-2/3">
                     <div className="hidden lg:flex justify-between">

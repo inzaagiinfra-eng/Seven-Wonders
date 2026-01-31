@@ -57,7 +57,7 @@ const Navbar = () => {
           }} >
 
           <Link to="/" className='flex items-center '>
-            <img src="/logo.png" alt="logo" className='max-md:w-30 md:w-60 max-md:20 md:40' />          
+            <img src="/logo.png" alt="logo" className='max-md:w-20 md:w-40 ' />          
           </Link>
           <div className='lg:hidden max-lg:flex justify-center items-center gap-2 '>
             <button onClick={() => setnavbar(!navbar)}>
