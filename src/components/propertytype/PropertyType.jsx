@@ -56,8 +56,8 @@ const PropertyType = () => {
                     duration: 0.6,
                     ease: "easeOut"
                 }} className='flex flex-col justify-center items-center gap-2'>
-                <h1 className='lg:text-4xl max-lg:text-2xl font-bold'>Explore Property Types</h1>
-                <p className='max-lg:text-sm lg:text-md'>Where your dreams find their perfect abode</p>
+                <h1 className='lg:text-4xl max-lg:text-2xl font-bold text-red-600'>Explore Property Types</h1>
+                <p className='max-lg:text-sm lg:text-md '>Where your dreams find their perfect abode</p>
             </motion.div>
             <motion.div initial="hidden"
                 whileInView="show"
@@ -79,10 +79,8 @@ const PropertyType = () => {
                                         className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                                     />
                                 </div>
-
-                                <h1 className="font-bold mt-2">{item.title}</h1>
+                                <h1 className="font-bold mt-2 text-red-600">{item.title}</h1>
                             </Link>
-
                         </motion.div>
                     ))
                 }

@@ -48,54 +48,48 @@ const Footer = () => {
             <div className="flex max-lg:flex-col gap-10">
 
 
-                <div className="lg:w-1/3 flex flex-col  ">
+                <div className="lg:w-1/3 flex flex-col">
                     <h1 className="flex items-center gap-2 text-xl font-bold text-black">
                         <img src="/logo.png" alt="logo" className='max-md:w-20 md:w-30 ' />
                     </h1>
-                    <div className="flex-col gap-2 flex">
+                    <div className="flex-col gap-2  flex">
 
-                        <p className="text-sm flex items-center gap-2 text-black leading-relaxed">
-                            <span><FaLocationDot size={20} />
+                        <p className="text-sm flex items-center  gap-2  leading-relaxed">
+                            <span><FaLocationDot className="text-red-600" size={20} />
                             </span>
                             <span>Building No.362, Sushant Lok-1,
                                 Sector-43, Gurugram, Haryana</span>
                         </p>
-                        <p className="text-sm flex items-center gap-2 text-black leading-relaxed">
-                            <span><FaLocationDot size={20} />
+                        <p className="text-sm flex items-center gap-2  leading-relaxed">
+                            <span><FaLocationDot className="text-red-600" size={20} />
                             </span>
                             <span>Building No.362, Sushant Lok-1,
                                 Sector-43, Gurugram, Haryana</span>
                         </p>
-                        <p className="text-sm flex items-center gap-2 text-black leading-relaxed">
-                            <span><IoCallSharp size={20} />
+                        <p className="text-sm flex items-center gap-2  leading-relaxed">
+                            <span><IoCallSharp className="text-red-600" size={20} />
                             </span>
                             <span>+91 8076310637</span>
                         </p>
-                        <p className="text-sm flex items-center gap-2 text-black leading-relaxed">
-                            <span><IoMailUnread  size={20} />
+                        <p className="text-sm flex items-center gap-2  leading-relaxed">
+                            <span><IoMailUnread className="text-red-600"  size={20} />
                             </span>
                             <span>sevenwonder234@gmail.com</span>
                         </p>
                     </div>
                 </div>
-
-
-
-
-
-
                 <div className="lg:w-2/3">
                     <div className="hidden lg:flex justify-between">
                         {sections.map((sec, i) => (
                             <div key={i} className="flex flex-col gap-6">
-                                <h2 className="font-bold text-2xl text-black">
+                                <h2 className="font-bold text-2xl text-red-600">
                                     {sec.title}
                                 </h2>
                                 {sec.data.map((item, idx) => (
                                     <Link
                                         key={idx}
                                         to={item.link}
-                                        className="text-md font-semibold text-gray-500 hover:text-black hover:underline"
+                                        className="text-md text-red-400 font-semibold  hover:text-black hover:underline"
                                     >
                                         {item.title}
                                     </Link>
@@ -107,7 +101,7 @@ const Footer = () => {
                     <div className="hidden md:flex lg:hidden justify-between">
                         {sections.map((sec, i) => (
                             <div key={i} className="flex flex-col gap-3">
-                                <h2 className="font-semibold text-black">
+                                <h2 className="font-semibold text-red-600">
                                     {sec.title}
                                 </h2>
                                 {sec.data.map((item, idx) => (
@@ -122,13 +116,12 @@ const Footer = () => {
                             </div>
                         ))}
                     </div>
-
                     <div className="md:hidden flex flex-col gap-4">
                         {sections.map((sec, i) => (
                             <div key={i} className="border-b pb-2">
                                 <button
                                     onClick={() => setOpen(open === i ? null : i)}
-                                    className="flex justify-between w-full font-semibold text-black"
+                                    className="flex justify-between text-red-600 w-full font-semibold "
                                 >
                                     {sec.title}
                                     <span>{open === i ? "−" : "+"}</span>
@@ -140,7 +133,7 @@ const Footer = () => {
                                             <Link
                                                 key={idx}
                                                 to={item.link}
-                                                className="text-sm text-black hover:underline"
+                                                className="text-sm text-red-400 hover:underline"
                                             >
                                                 {item.title}
                                             </Link>
@@ -152,7 +145,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
             <div className="lg:border-t lg:mt-10 pt-6 lg:mb-16 max-lg:mb-8 text-center">
                 <p className="text-xs text-gray-500">
                     © Copyright Seven Wonders

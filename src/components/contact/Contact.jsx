@@ -51,9 +51,7 @@ const Contact = () => {
 
     return (
         <section className="w-full mt-10 app-container">
-            <div className="  bg-linear-to-r from-blue-100 via-blue-50 to-orange-200  rounded-4xl flex items-center justify-between max-lg:flex-col  lg:min-h-[60vh] max-lg:min-h-[80vh]">
-
-
+            <div className="  bg-linear-to-r from-red-500 via-red-400 to-white  rounded-4xl flex items-center justify-between max-lg:flex-col  lg:min-h-[60vh] max-lg:min-h-[80vh]">
                 <motion.div initial={{ opacity: 0, x: -60 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{
@@ -62,7 +60,7 @@ const Contact = () => {
                     }}
                     viewport={{ once: false, amount: 0.3 }} className="text-center max-lg:mt-8 lg:text-left max-w-xl px-6 w-[50%] max-lg:w-full">
                     <form onSubmit={handleSubmit} className='flex flex-col bg-white rounded-4xl p-4 gap-4 w-full'>
-                        <h1 className='lg:text-2xl font-bold'>Invest In Your Dreams</h1>
+                        <h1 className='lg:text-2xl font-bold text-red-600'>Invest In Your Dreams</h1>
                         <p className='text-gray-500 text-sm'>Fill in the form to get in touch.</p>
                         <input
                             type="text"
@@ -70,7 +68,7 @@ const Contact = () => {
                             placeholder="Your Name"
                             value={formData.name}
                             onChange={handleChange}
-                            className="py-3 px-4 rounded-full border border-gray-200 focus:border-black focus:ring-0 outline-none transition placeholder:text-gray-400" />
+                            className="py-3 px-4 rounded-full  border border-gray-200 focus:border-black focus:ring-0 outline-red-600 transition placeholder:text-red-300" />
 
                         <input
                             type="email"
@@ -78,31 +76,29 @@ const Contact = () => {
                             placeholder="Your Email"
                             value={formData.email}
                             onChange={handleChange}
-                            className="py-3 px-4 rounded-full border border-gray-200 focus:border-black focus:ring-0 outline-none transition placeholder:text-gray-400" />
+                            className="py-3 px-4 rounded-full border border-gray-200 focus:border-black focus:ring-0 outline-red-600 transition placeholder:text-red-300" />
                         <input
                             type="tel"
                             name="phone"
                             placeholder="Your Number"
                             value={formData.phone}
                             onChange={handleChange}
-                            className="py-3 px-4 rounded-full border border-gray-200 focus:border-black focus:ring-0 outline-none transition placeholder:text-gray-400" />
+                            className="py-3 px-4 rounded-full border border-gray-200 focus:border-black focus:ring-0 outline-red-600 transition placeholder:text-red-300" />
 
                         <textarea
                             name="message"
                             placeholder="Message"
                             value={formData.message}
                             onChange={handleChange}
-                            className="py-3 px-4 rounded-full border border-gray-200 focus:border-black focus:ring-0 outline-none transition placeholder:text-gray-400"
+                            className="py-3 px-4 rounded-full border border-gray-200 focus:border-black focus:ring-0 outline-red-600 transition placeholder:text-red-300"
                         />
 
                         <button
                             type="submit"
-                            className="border px-4 py-1 inline-flex items-center rounded-4xl w-fit self-center hover:bg-black hover:text-white cursor-pointer"
+                            className="border border-red-600 px-4 py-1 inline-flex items-center rounded-4xl w-fit self-center hover:bg-red-600 hover:text-white cursor-pointer"
                         >
                             Submit
                         </button>
-
-
                     </form>
                 </motion.div>
 

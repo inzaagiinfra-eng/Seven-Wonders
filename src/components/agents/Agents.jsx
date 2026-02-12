@@ -52,18 +52,16 @@ const Agents = () => {
   return (
     <section className="w-full py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800">
+          <h2 className="text-4xl font-bold text-red text-red-600">
             Meet Our Property Experts
           </h2>
-          <p className="text-gray-600 mt-3">
+          <p className="text-black mt-3">
             Our professional agents are here to help you buy, sell, or rent your
             dream property.
           </p>
         </div>
 
-        {/* Agents Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {agentsData.map((agent) => (
             <div
@@ -79,14 +77,14 @@ const Agents = () => {
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className="text-xl font-semibold text-red-600">
                   {agent.name}
                 </h3>
-                <p className="text-blue-600 text-sm">{agent.role}</p>
+                <p className="text-grey-600 text-sm">{agent.role}</p>
 
                 <div className="mt-4 space-y-2 text-sm text-gray-600">
                   <p className="flex items-center gap-2">
-                    <FaMapMarkerAlt className="text-blue-500" />
+                    <FaMapMarkerAlt className="text-red-600" />
                     {agent.location}
                   </p>
                   <p>Experience: {agent.experience}</p>
@@ -96,7 +94,7 @@ const Agents = () => {
                 {/* Contact */}
                 <div className="mt-5 space-y-2">
                   <p className="flex items-center gap-2 text-sm">
-                    <FaPhoneAlt className="text-green-500" />
+                    <FaPhoneAlt className="text-red-600" />
                     {agent.phone}
                   </p>
                   <p className="flex items-center gap-2 text-sm">
@@ -105,8 +103,7 @@ const Agents = () => {
                   </p>
                 </div>
 
-                {/* Button */}
-                <button className="mt-5 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                <button className="mt-5 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">
                   Contact Agent
                 </button>
               </div>

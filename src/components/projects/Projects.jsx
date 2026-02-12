@@ -43,11 +43,12 @@ const projects = [
     },
 ];
 
+
 const Projects = () => {
     return (
         <section className="py-16 px-6">
             <div className="app-container mx-auto">
-                <h2 className="text-3xl font-bold text-center mb-10">
+                <h2 className="text-3xl text-red-600 font-bold text-center mb-10">
                     Our Property Projects
                 </h2>
 
@@ -64,11 +65,11 @@ const Projects = () => {
                             />
 
                             <div className="p-4">
-                                <span className="text-sm text-blue-600 font-semibold">
+                                <span className="text-sm text-red-600 font-semibold">
                                     {project.type}
                                 </span>
 
-                                <h3 className="text-lg font-bold mt-1">
+                                <h3 className="text-lg text-red-600 font-bold mt-1">
                                     {project.title}
                                 </h3>
 
@@ -77,12 +78,12 @@ const Projects = () => {
                                 </p>
 
                                 <div className="mt-3 text-sm text-gray-700 space-y-1">
-                                    <p><b>Price:</b> {project.price}</p>
-                                    <p><b>Area:</b> {project.area}</p>
-                                    <p><b>Status:</b> {project.status}</p>
+                                    <p><b className="text-red-600">Price:</b> {project.price}</p>
+                                    <p><b className="text-red-600">Area:</b> {project.area}</p>
+                                    <p><b className="text-red-600">Status:</b> {project.status}</p>
                                 </div>
 
-                                <button className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                                <button className="mt-4 w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">
                                     View Details
                                 </button>
                             </div>

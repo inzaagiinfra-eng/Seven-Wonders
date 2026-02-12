@@ -102,12 +102,10 @@ const ShowReviews = () => {
         if (emblaApi) emblaApi.scrollNext();
     }, [emblaApi]);
 
-
-
     return (
         <div className="app-container max-md:mt-4 md:mt-28 max-md:mb-4 md:mb-8">
             <div className="flex justify-center items-center ">
-                <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-red-600">
                     WHAT CUSTOMERS SAY
                 </h1>
             </div>
@@ -171,7 +169,7 @@ const ShowReviews = () => {
                                             <div className=" flex gap-1 justify-center items-center">
 
 
-                                                <p className="font-semibold max-md:text-md md:text-lg text-gray-800 text-sm mb-1 line-clamp-1">
+                                                <p className="font-semibold max-md:text-md md:text-lg  text-black text-sm mb-1 line-clamp-1">
                                                     {item.name}
                                                 </p>
                                                 <p>

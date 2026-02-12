@@ -38,8 +38,6 @@ function App() {
         <Route path='/blog' element={<Blog/>} />
         <Route path='/press-info' element={<PressInfo/>} />
        
-
-
       </Routes>
 
       <Footer/>

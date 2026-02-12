@@ -30,7 +30,7 @@ const OurQuality = () => {
                     }}
                     viewport={{ once: false, amount: 0.3 }} className=' flex flex-col justify-center items-start lg:gap-4'>
                     <p>our best services</p>
-                    <h1 className='lg:text-5xl max-lg:text-2xl font-bold'>   Why Choose <br /> Seven Wonders</h1>
+                    <h1 className='lg:text-5xl max-lg:text-2xl font-bold text-red-600'>   Why Choose <br /> Seven Wonders</h1>
                     <ul className='flex flex-col justify-center items-start lg:gap-4 max-lg:gap-2'>
                         <li className='flex  justify-center items-center font-semibold gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span>Expert guidance for buying, selling, and renting properties</span></li>
                         <li className='flex  justify-center items-center font-semibold  gap-2'><span className=''><BsCheck2Circle size={24} /></span> <span>Verified residential and commercial property listings</span></li>

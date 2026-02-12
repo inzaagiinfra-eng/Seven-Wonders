@@ -55,12 +55,12 @@ const pressData = [
 const PressInfo = () => {
   return (
     <div className="p-6 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold mb-8 text-center">Press & Media</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center text-red-600">Press & Media</h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {pressData.map((item) => (
           <div
             key={item.id}
-            className="border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
+            className=" rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
           >
             <img
               src={item.image}
@@ -68,8 +68,8 @@ const PressInfo = () => {
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-500 mb-2">{item.date} | {item.source}</p>
+              <h3 className="text-xl font-semibold mb-2 text-red-600">{item.title}</h3>
+              <p className="text-sm text-black mb-2">{item.date} | {item.source}</p>
               <p className="text-gray-700">{item.description}</p>
             </div>
           </div>

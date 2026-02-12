@@ -62,7 +62,7 @@ const Blog = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800">
+          <h2 className="text-4xl font-bold text-red-600">
             Real Estate Insights & Blogs
           </h2>
           <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
@@ -87,11 +87,11 @@ const Blog = () => {
 
               {/* Content */}
               <div className="p-5">
-                <span className="inline-flex items-center gap-2 text-xs text-blue-600 font-medium">
-                  <FaTag /> {blog.category}
+                <span className="inline-flex items-center gap-2 text-xs text-red-600 font-medium">
+                  <FaTag className="" /> {blog.category}
                 </span>
 
-                <h3 className="mt-3 text-lg font-semibold text-gray-800 leading-snug">
+                <h3 className="mt-3 text-lg font-semibold text-red-600 leading-snug">
                   {blog.title}
                 </h3>
 
@@ -102,18 +102,18 @@ const Blog = () => {
                 {/* Meta Info */}
                 <div className="mt-4 space-y-1 text-xs text-gray-500">
                   <p className="flex items-center gap-2">
-                    <FaUser /> {blog.author}
+                    <FaUser className="text-red-600" /> {blog.author}
                   </p>
                   <p className="flex items-center gap-2">
-                    <FaCalendarAlt /> {blog.date}
+                    <FaCalendarAlt className="text-red-600" /> {blog.date}
                   </p>
                   <p className="flex items-center gap-2">
-                    <FaClock /> {blog.readTime}
+                    <FaClock className="text-red-600" /> {blog.readTime}
                   </p>
                 </div>
 
                 {/* CTA */}
-                <button className="mt-4 w-full py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                <button className="mt-4 w-full py-2 text-sm bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
                   Read More
                 </button>
               </div>

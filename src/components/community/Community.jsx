@@ -117,10 +117,10 @@ const Community = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-gray-800">
+          <h2 className="text-4xl font-bold text-red-600">
             Explore Popular Communities
           </h2>
-          <p className="text-gray-600 mt-3 max-w-3xl mx-auto">
+          <p className="text-black mt-3 max-w-3xl mx-auto">
             Discover the best neighborhoods with detailed insights on lifestyle,
             pricing, amenities, and investment potential.
           </p>
@@ -142,7 +142,7 @@ const Community = () => {
 
               {/* Content */}
               <div className="p-8">
-                <h3 className="text-3xl font-bold text-gray-800">
+                <h3 className="text-3xl font-bold text-red-600">
                   {community.name}, {community.city}
                 </h3>
 
@@ -156,7 +156,7 @@ const Community = () => {
                     <p className="font-semibold text-gray-700">
                       Price Range
                     </p>
-                    <p className="text-blue-600 font-bold">
+                    <p className="text-red-600 font-bold">
                       {community.priceRange}
                     </p>
                   </div>
@@ -252,7 +252,7 @@ const Community = () => {
                     {community.projects.map((project, i) => (
                       <span
                         key={i}
-                        className="px-4 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"
+                        className="px-4 py-1 bg-red-100 text-red-700 rounded-full text-sm"
                       >
                         {project}
                       </span>
@@ -261,7 +261,7 @@ const Community = () => {
                 </div>
 
                 {/* CTA */}
-                <button className="mt-8 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                <button className="mt-8 px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
                   View Properties in {community.name}
                 </button>
               </div>

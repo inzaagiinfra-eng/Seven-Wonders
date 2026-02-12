@@ -55,7 +55,7 @@ const FAQ = () => {
           </p>
           <p>
             If you have other questions, please just send it to{" "}
-            <span className="underline cursor-pointer">
+            <span className="underline text-red-600 cursor-pointer">
             sevanwonders9761@gmail.com
             </span>
             .
@@ -72,7 +72,7 @@ const FAQ = () => {
             >
               <button
                 onClick={() => toggleSection(i)}
-                className="flex justify-between w-full border-0 text-left text-black font-bold max-lg:text-sm lg:text-md"
+                className="flex justify-between w-full border-0 text-left text-red-600 font-bold max-lg:text-sm lg:text-md"
               >
                 {sec.title}
                 <span className="cursor-pointer max-lg:text-md lg:text-2xl">
@@ -90,7 +90,7 @@ const FAQ = () => {
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                     className="overflow-hidden mt-2"
                   >
-                    <p className="lg:text-sm max-lg:text-[11px] text-gray-500">{sec.p}</p>
+                    <p className="lg:text-sm max-lg:text-[11px] text-black">{sec.p}</p>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -99,7 +99,7 @@ const FAQ = () => {
         </div>
         <div className="flex lg:mb-30 max-lg:flex-col lg:pt-12 max-lg:pt-6 lg:justify-end max-lg:justify-center max-lg:items-center  gap-4">
           <p className="lg:text-sm max-lg:text-[11px]">Unable to find satisfactory answers ?</p>
-          <Link to="/contact-us" className="bg-yellow-950 py-2 max-lg:text-sm px-12 lg:text-md font-semibold text-white"> CONTECT SUPPORT</Link>
+          <Link to="/contact-us" className=" py-2 max-lg:text-sm px-12 lg:text-md font-semibold text-white bg-red-600"> CONTECT SUPPORT</Link>
         </div>
       </div>
     </div>

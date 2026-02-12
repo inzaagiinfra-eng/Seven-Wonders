@@ -50,7 +50,7 @@ const BuySaleRent = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.3 }}
                 transition={{ duration: 0.6 }} className='flex justify-center items-center'>
-                <h1 className='max-lg:text-2xl lg:text-4xl font-bold'>Everything Should be easy</h1>
+                <h1 className='max-lg:text-2xl lg:text-4xl font-bold text-red-600'>Everything Should be easy</h1>
 
             </motion.div>
             <motion.div variants={container}
@@ -64,14 +64,12 @@ const BuySaleRent = () => {
                         variants={card}
                     >
 
-                        <Link to={item.link} key={item.id} className='flex flex-col justify-center items-center lg:space-y-4 max-lg:space-y-2   xl:mx-8 hover:bg-gray-100 px-8 py-8 rounded-full '>
+                        <Link to={item.link} key={item.id} className='flex flex-col text-white hover:bg-white hover:text-black  justify-center items-center lg:space-y-4 max-lg:space-y-2   xl:mx-8 bg-red-600 px-8 py-8 rounded-full '>
                             <img src={item.img} alt="type images" />
-                            <h1 className='lg:text-2xl max-lg:text-xl font-semibold'>{item.title}</h1>
+                            <h1 className='lg:text-2xl max-lg:text-xl   font-semibold'>{item.title}</h1>
                             <p className='lg:text-md max-lg:text-sm text-center'>{item.description}</p>
-
                         </Link>
                     </motion.div>
-
                 ))}
             </motion.div>
         </div>

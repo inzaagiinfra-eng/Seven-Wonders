@@ -70,7 +70,7 @@ const Navbar = () => {
           <div className='max-lg:hidden flex items-center justify-center gap-4'>
             {
               nav.map((item, index) => (
-                <div key={item.id} className='flex items-center hover:bg-black hover:text-white px-2 py-0.5 rounded-2xl'>
+                <div key={item.id} className='flex items-center hover:bg-red-600 text-red-600 hover:text-white px-2 py-0.5 rounded-2xl'>
                   <Link className='text-md font-semibold' to={item.link}>{item.title}</Link>
                 </div>
               ))
@@ -81,10 +81,9 @@ const Navbar = () => {
             {
               more.map((item, index) => (
                 <div key={item.id}>
-                  <Link className='text-md font-semibold' to={item.link}>{item.title}</Link>
+                  <Link className='text-md font-semibold hover:bg-red-600 text-red-600  hover:text-white px-2 py-1 rounded-xl' to={item.link}>{item.title}</Link>
                 </div>
               ))
-
             }
 
           </div>
@@ -97,18 +96,18 @@ const Navbar = () => {
 
         {navbar
           && (
-            <div className='absolute right-10 bg-black text-white p-4 rounded-lg top-4'>
+            <div className='absolute right-10 bg-white p-4 rounded-lg top-4'>
               {
                 nav.map((item, index) => (
                   <div key={item.id}>
-                    <Link to={item.link}>{item.title}</Link>
+                    <Link className='text-red-600 font-semibold' to={item.link}>{item.title}</Link>
                   </div>
                 ))
               }
               {
                 more.map((item, index) => (
                   <div key={item.id}>
-                    <Link to={item.link}>{item.title}</Link>
+                    <Link className='text-red-600 font-semibold' to={item.link}>{item.title}</Link>
                   </div>
                 ))
               }
