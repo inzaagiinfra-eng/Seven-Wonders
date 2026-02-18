@@ -19,17 +19,17 @@ const Contact = () => {
             [name]: value,
         });
     };
- 
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         emailjs
-            .sendForm(
-                "service_8a5h8bq",
-               "template_078q0hv",
+            .send(
+                "service_yi1xnlk",
+                "template_vm9d14y",
                 e.target,
-                "FdeJLhJ7IBSpFDl-Y"
+                "TfVh_h1JB2MjU51Si"
             )
             .then(
                 () => {
