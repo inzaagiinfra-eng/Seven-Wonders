@@ -21,15 +21,15 @@ const ContactUs = () => {
     const onSubmit = (data) => {
         emailjs
             .send(
-                "service_8a5h8bq",
-                "template_078q0hv",
+                "service_yi1xnlk",
+                "template_vm9d14y",
                 {
                     name: data.name,
                     email: data.email,
                     phone: data.phone,
                     message: data.message,
                 },
-                "FdeJLhJ7IBSpFDl-Y"
+                "TfVh_h1JB2MjU51Si"
             )
             .then(
                 () => {
@@ -41,14 +41,12 @@ const ContactUs = () => {
             );
     };
 
-
     return (
         <div className="app-container">
             <div className="lg:mt-12">
                 <div>
                     <img src="/anthorimages/contectus.png" alt="contectus" />
                 </div>
-
                 <div className="flex max-lg:flex-col justify-center gap-16 items-start">
                     <div className=" max-lg:w-full p-6 lg:w-[60%]">
                         <div className="gap-2 mb-4 flex flex-col text-gray-600 text-sm">
@@ -58,7 +56,6 @@ const ContactUs = () => {
                                 at:
                             </p>
                         </div>
-
                         <form
                             onSubmit={handleSubmit(onSubmit)}
                             className="  rounded-2xl  space-y-5"
@@ -132,7 +129,6 @@ const ContactUs = () => {
                                     </p>
                                 )}
                             </div>
-
                             <button
                                 type="submit"
                                 className=" bg-amber-950 font-bold text-white py-3 px-25 rounded-lg hover:bg-amber-900 transition"
@@ -141,7 +137,6 @@ const ContactUs = () => {
                             </button>
                         </form>
                     </div>
-
                     <div className="flex max-lg:w-full lg:w-[40%]">
                         <section className=" p-6 rounded-2xl">
                             <h2 className="text-3xl text-amber-950 font-bold mb-12 text-center">
@@ -152,31 +147,26 @@ const ContactUs = () => {
                                 message or ideas. Or simply pop in for a cup of fresh tea and a
                                 cookie:
                             </p>
-
                             <div className="space-y-4 text-gray-700 text-md">
                                 <p className="flex items-center gap-2">
-                                    <FaPhoneAlt className="text-amber-950 text-2xl" /> +91
-                                    8076310637
+                                    <FaPhoneAlt className="text-amber-950 text-2xl" />+91 90-1565-1565
                                 </p>
-
                                 <p className="flex items-center gap-2">
                                     <FaEnvelope className="text-amber-950 text-2xl" />{" "}
-                                    enzawood9761@gmail.com
+                                     info@trianglesconsolidated.in
                                 </p>
-
                                 <p className="flex items-start gap-2">
                                     <FaMapMarkerAlt className="text-amber-950 mt-1 text-2xl" />
-                                    Building No.362, Sushant Lok-1,
-                                    Sector-43, Gurugram, Haryana
+                                    G -20 3rd floor, Preet Vihar,
+                                    Vikas Marg New Delhi - 110092
                                 </p>
                                 <div className="border-b border-gray-400"></div>
-
                                 <div className="flex items-start gap-2">
                                     <FaClock className="text-amber-950 mt-1 text-2xl" />
                                     <div>
                                         <p className="font-medium">Opening Hours:</p>
-                                        <p>MON to SAT: 9:00AM - 10:00PM</p>
-                                        <p>SUN: 10:00AM - 6:00PM</p>
+                                        <p>MON to SAT: 10:00AM - 07:00PM</p>
+                                        <p>SUN: Closed</p>
                                     </div>
                                 </div>
                             </div>

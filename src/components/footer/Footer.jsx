@@ -121,7 +121,7 @@ const Footer = () => {
                             <div key={i} className="border-b pb-2">
                                 <button
                                     onClick={() => setOpen(open === i ? null : i)}
-                                    className="flex justify-between text-red-600 w-full font-semibold "
+                                    className="flex justify-between text-red-600 w-full font-semibold"
                                 >
                                     {sec.title}
                                     <span>{open === i ? "−" : "+"}</span>

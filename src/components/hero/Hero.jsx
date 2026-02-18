@@ -4,10 +4,7 @@ import { Link } from "react-router-dom"
 
 const Hero = () => {
   return (
-
     <section className="w-full app-container">
-
-
       <div className="   bg-linear-to-r from-white via-red-300 to-red-500 px-8 lg:py- max-lg:py-4 rounded-4xl flex items-center justify-between max-lg:flex-col  lg:min-h-[60vh] max-lg:min-h-[80vh]">
         <motion.div initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
