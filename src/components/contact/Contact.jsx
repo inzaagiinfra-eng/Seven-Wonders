@@ -28,7 +28,7 @@ const Contact = () => {
             .send(
                 "service_yi1xnlk",
                 "template_vm9d14y",
-                e.target,
+                formData,
                 "TfVh_h1JB2MjU51Si"
             )
             .then(

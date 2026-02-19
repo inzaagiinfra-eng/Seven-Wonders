@@ -57,24 +57,24 @@ const Footer = () => {
                         <p className="text-sm flex items-center  gap-2  leading-relaxed">
                             <span><FaLocationDot className="text-red-600" size={20} />
                             </span>
-                            <span>Building No.362, Sushant Lok-1,
-                                Sector-43, Gurugram, Haryana</span>
+                            <span> G - 20 3rd floor, Preet Vihar,
+                                Vikas Marg New Delhi - 110092</span>
                         </p>
                         <p className="text-sm flex items-center gap-2  leading-relaxed">
                             <span><FaLocationDot className="text-red-600" size={20} />
                             </span>
-                            <span>Building No.362, Sushant Lok-1,
-                                Sector-43, Gurugram, Haryana</span>
+                            <span> G - 20 3rd floor, Preet Vihar,
+                                Vikas Marg New Delhi - 110092</span>
                         </p>
                         <p className="text-sm flex items-center gap-2  leading-relaxed">
                             <span><IoCallSharp className="text-red-600" size={20} />
                             </span>
-                            <span>+91 8076310637</span>
+                            <span>+91 90-1565-1565</span>
                         </p>
                         <p className="text-sm flex items-center gap-2  leading-relaxed">
-                            <span><IoMailUnread className="text-red-600"  size={20} />
+                            <span><IoMailUnread className="text-red-600"  size={20}/>
                             </span>
-                            <span>sevenwonder234@gmail.com</span>
+                            <span>info@trianglesconsolidated.in</span>
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,6 @@ const Footer = () => {
                             </div>
                         ))}
                     </div>
-
                     <div className="hidden md:flex lg:hidden justify-between">
                         {sections.map((sec, i) => (
                             <div key={i} className="flex flex-col gap-3">
